@@ -1,0 +1,126 @@
+@charset "utf-8";
+/*重置样式*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin: 0;padding: 0;}
+
+body { background: #FFF; color: #000; font-size: 12px; font-style: normal; font-family:'Microsoft Yahei','微软雅黑','Simsun','宋体','Arial', sans-serif;}
+address,caption,dfn,th,var,cite,code,i,em,s,label,input,select,textarea{font-style:normal;font-weight:normal;font-family:inherit;}
+input[type="submit"],input[type="reset"],input[type="button"]{cursor:pointer;}
+select,input,textarea{font-family:inherit;margin:0;}
+li { list-style:none;}
+img { border:none; background:none;}
+a { text-decoration:none;color:#5a5653;
+	}
+a:hover { text-decoration:underline; color:#f50;}
+table { border-spacing:0; border-collapse:collapse;}
+
+.clearfix{*zoom:1}
+.clearfix:after{content: '';
+                clear: both;
+                display: block;
+                clear: both;
+            }
+ .text-in2em{text-indent: 2em}
+.mag{margin: 0 auto;}
+.ftl{float: left;}
+.ftr{float: right;}
+.br_r{border-right: 1px solid #ccc;}
+
+
+
+
+.header{
+	height: 100px;
+	background:#e9e9d9;
+	border-bottom:1px solid #e9f9f9;
+}
+.mode_body{
+	padding-bottom: 20px;
+	padding-top: 20px;
+	height: 600px;
+	background:#f2f2f2;
+}
+.container{
+	width: 1000px;
+	padding-top: 20px;
+	margin: 0 auto;
+	min-height: 600px;
+	background: #fbfbfb;
+	border-radius: 15px;
+	border-bottom: 3px solid #e9f9f9;
+}
+.footer{
+	height: 100px;
+	background:#e9e9e9;
+}
+.article{
+	padding: 10px 20px;
+}
+.article_title{
+	font-weight: normal;
+	font-size: 18px;
+	font-family: "Microsoft Yahei";
+	text-align: center;
+	line-height:50px;
+
+}
+.article_info{
+	font-size: 12px;
+	color: #999;
+	text-align: center;;
+
+}
+.article_info span{
+	padding :0 10px;
+}
+.article_contain{
+	padding: 20px;
+}
+.article_contain p{
+	padding: 8px 0;
+	font-size: 14px;
+	line-height: 24px;
+	text-indent: 2em; 
+	color :#333;
+
+}
+.mode_mac{
+	width: 500px;
+	height: 300px;
+	margin: 0 auto;
+	background:url(../image/1.jpg) center ;
+	background-repeat: no-repeat;
+	border-radius:5px;
+	border: 1px solid #f2f2f2;
+}
+.mode_mac_hd{
+	padding-top: 5px;
+	height:30px;
+	background: #ccc;
+	border-radius:5px 5px 0 0;
+	
+}
+.mode_mac_hd_icon2{
+	margin: 1px 5px;
+	width: 24px;
+	height:24px;
+	background: url(../image/icons.png);
+	background-position:-201px -204px;
+	
+}
+.mode_mac_hd_icon1{
+	margin-right:5px;
+	margin-top:1px;
+	width: 24px;
+	height:24px;
+	background: url(../image/icons.png);
+	background-position:-235px -204px;
+	
+}
+.mode_mac_hd_icon3{
+	position:absolute;
+	left:506px;
+	top:288px;
+	width: 24px;
+	height:24px;
+
+}

@@ -1,0 +1,147 @@
+/*é‡ç½®æ ·å¼*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin: 0;padding: 0;}
+
+
+body { background: #FFF; color: #000; font-size: 12px; font-style: normal; font-family:'Microsoft Yahei','å¾®è½¯é›…é»‘','Simsun','å®‹ä½“','Arial', sans-serif;}
+em, b, i { font-style:normal;}
+li { list-style:none;}
+img { border:none;}
+a { text-decoration:none; color:#244666;}
+a:hover { text-decoration:underline; color:#f50;}
+table { border-spacing:0; border-collapse:collapse;}
+
+/*é€šç”¨*/
+.hide {display: none;}
+.flt {float:left;}
+.frt {float:right;}
+.clear { clear: both;}
+.clearfix { *zoom: 1;} 
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both;}
+
+/*样式*/
+.warp{width:1349px; min-height: 800px}
+.heared_box
+{
+width:1349px;
+height: 140px;
+}
+.heared_box .header
+{
+width:1349px;
+height: 140px;
+}
+.heared_box .header h1
+{
+	width:1349px;
+	height: 42px;
+	padding-top:50px ;
+
+}
+.heared_box .header h1 a 
+{
+margin: 0 auto;
+display:block;
+height: 42px;
+color: #f06560;
+font-size: 40px;
+line-height: 42px;
+text-align: center;
+
+
+
+
+}
+.heared_box .header h1 a:hover
+{
+text-decoration: none;
+}
+/*导航布局*/
+.container
+{
+width: 100%;
+min-height:94px;
+}
+.container .nav
+{
+text-align:center;
+padding:0 100px 60px 60px;
+overflow:hidden;
+}
+.container .nav ul
+{
+margin:0 auto;
+}
+.container .nav ul li
+{
+margin:0 20px;
+display: inline-block;
+
+}
+.container .nav ul li a
+{
+display: block;
+padding: 8px 16px;
+border-radius: 8px;
+font-size: 20px;
+color: #a9afb8;
+text-align:center;
+}
+.container .nav ul li a:hover
+{
+color:#f06560;
+text-decoration:none;
+}
+.container .nav ul li:first-child a
+{
+color:#f06560;
+}
+/*图文布局*/
+.article
+{
+width: 920px;
+margin: 0px auto;
+overflow: hidden;
+text-align: center;
+}
+
+.article .icon a img
+{
+margin:10px 20px 10px 20px;
+width: 400px;
+height: 300px;
+z-index: 9;
+}
+.article .icon:hover
+{
+
+background: #FFF;
+opacity: 0.7;
+
+}
+.article .icon h2
+{
+font-size: 14px;
+padding: 16px 0 40px 0;
+line-height: 20px;
+color: #7e838f;
+}
+.footer_box
+{
+padding-top:30px;
+height: 30px;
+text-align: center;
+color:#f06560;
+}
+<!-- 遮罩层 -->
+.popup
+{
+background: #666;
+opacity: 0.5;
+filter:alpha(opacity=50);
+position: fixed;
+top: 0;	bottom: 0;
+right: 0;left: 0;
+z-index: 6;
+display: none;
+}
