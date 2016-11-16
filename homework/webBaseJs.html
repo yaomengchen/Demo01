@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>HomeworkJS</title>
+</head>
+<body>
+    <script type="text/javascript">
+    //if语句多种判断实例
+    var eat = "noodles";
+    if(eat === "rice"){console.log("吃米饭");}
+    else if (eat === "noodles"){console.log("吃面条");}
+    else {console.log("只能吃馒头")}
+    //switch多种选择实例
+    var  food = 3;//参数必须有初值
+    switch (food) {
+        case 1:
+        case 2:
+            console.log("米饭");
+            break;//结束跳出
+        
+        case 3:
+            console.log("面条");
+            break;
+        default://不符合所有条件时
+            console.log("饿着");
+    }
+    //for循环
+    var eat_arr = [2,2,3,4,2,3];
+    for (var i = 0; i< eat_arr.length; i++){
+        switch(eat_arr[i]){
+        case 1:
+        case 2:
+            console.log("米饭");
+            break;//结束跳出
+        
+        case 3:
+            console.log("面条");
+            break;
+        default://不符合所有条件时
+            console.log("饿着");
+        }
+    }
+    //while循环语句
+     var eat_arr = [2,2,3,4,2,3];
+    var i = 0;
+    while (i < eat_arr.length){
+        switch(eat_arr[i]){
+        case 1:
+        case 2:
+            console.log("米饭");
+            break;//结束跳出
+        
+        case 3:
+            console.log("面条");
+            break;
+        default://不符合所有条件时
+            console.log("饿着");
+        }
+        i++;
+    }
+        
+    //do while  循环语句
+    var num = 1;
+    do {
+        document.write("数值为"+num+"<br/>");
+        num++
+    }
+    while (num <= 5);
+        
+    //退出循环break
+    var eat_arr = [2,2,3,4,2,2];
+    var i = 0;
+    var eat_max = 4;
+    while(i < eat_arr.length){
+        if(i == eat_max) break;
+         
+        switch(eat_arr[i]){
+        case 1:
+        case 2:
+            console.log("米饭");
+            break;//结束跳出
+        
+        case 3:
+            console.log("面条");
+            break;
+        default://不符合所有条件时
+            console.log("饿着");      
+        }
+        i++;
+    }
+    //继续循环 continue
+    var eat_arr = [2,2,3,4,2,2];
+    var i = 0;
+    var eat_null = 4;
+    while(i < eat_arr.length){
+        if(i == eat_null){
+            i++;
+            continue;
+        }
+        switch(eat_arr[i]){
+        case 1:
+        case 2:
+            console.log("米饭");
+            break;//结束跳出
+        
+        case 3:
+            console.log("面条");
+            break;
+        default://不符合所有条件时
+            console.log("饿着");      
+        }
+        i++;
+    }
+    
+    </script>
+</body>
+</html>
