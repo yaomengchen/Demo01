@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="calculator">
+		<input type="text" id="number1"/>+
+		<input type="text" id="number2"/> 
+		<span id="value">=</span>
+		<button type="button" id="summation" value ="">求和 </button>
+	</div>
+	<script>
+	function add(x,y){
+		return x+y;
+
+	};
+	
+	window.onload = function (){
+        var btn= document.getElementById("summation");
+		btn.onclick = function(){
+		var a = document.getElementById("number1").value;
+		var b = document.getElementById("number2").value;
+		var c = document.getElementById("value");
+		
+		var number1 = +a;
+		var number2 = +b;
+		
+		var valueable = add(number1,number2);
+			
+		c.innerHTML= valueable;	
+		}	
+	}
+	
+	</script>
+</body>
+</html>
