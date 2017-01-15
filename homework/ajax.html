@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <style>
+    
+        table td {
+            padding: 0 15px
+        }
+    </style>
+    <title>XMLHttpRequest</title>
+</head>
+
+<body>
+    <div id="goodsList">
+        <table>
+            <thead>
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Age</th>
+                    <th>Sum</th>
+                    <th>Operation</th>
+
+                </tr>
+            </thead>
+            <tbody id="goods">
+
+            </tbody>
+
+
+        </table>
+    </div>
+    <script src="jquery/jquery-2.2.4.js"></script>
+    <script>
+        $.ajax({
+            url: 'JSON/customerInformation.json',
+            type: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                //res表示向后端请求成功时返回的数据
+            if (res && res.code == 200) {
+                    var information = res.data.information;
+                    var informationDOM = '';
+                    $.each(information, function (key, val) {
+                        informationDOM += '<tr><td>'+ val.firstname +'</td><td>'+ val.lastname +'</td><td>'+ val.age +'</td><td>'+ val.sum +'</td><td class = "delete">删除</td></tr>'
+                    })
+                    $('#goods').append(informationDOM)
+                }
+            },
+            error: function (err) {
+                console.log(err)
+            }
+        })
+    </script>
+</body>
+
+</html>

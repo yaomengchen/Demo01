@@ -1,0 +1,35 @@
+{
+    "code": 200,
+    "data": {
+        "information": [
+            {
+                "firstname": "Alick",
+                "lastname": "Smith",
+                "age": "35",
+                "sum": "$240"
+    },
+            {
+                "firstname": "Beck",
+                "lastname": "Wood",
+                "age": "26",
+                "sum": "$68"
+    },
+            {
+                "firstname": "Daniel",
+                "lastname": "Turner",
+                "age": "42",
+                "sum": "$104"
+    },
+            {
+                "firstname": "Jane",
+                "lastname": "Jane",
+                "age": "16",
+                "sum": "$57"
+    }
+],
+        "page": 1,
+        "size": 10,
+        "total": 4
+    },
+    "msg": "请求正确"
+}
